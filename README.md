@@ -1,10 +1,10 @@
-- 👋 Hi, I’m @KingEGame
-- 👀 I’m interested in java core
-- 🌱 I’m currently learning OpenGL
-- 💞️ I’m looking to collaborate on MAPS in LWJGL
-- 📫 How to reach me about learning java
+# Hi, I'm KingEGame
+
+**Java & OpenGL developer** — focused on backend (Spring, Java core), graphics (LWJGL, OpenGL), and automation. Interested in MAPS and game tech in LWJGL.
+
+- Portfolio: [kingegame.github.io](https://kingegame.github.io)
+- Repos marked with the `test-assignment` topic are interview test tasks (e.g. Makers, Beeline.kg, yandex, TimelySoft). Main projects and test assignments are linked from the portfolio.
 
 <!---
-KingEGame/KingEGame is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
+KingEGame/KingEGame is a special repository: this README appears on your GitHub profile.
 --->
