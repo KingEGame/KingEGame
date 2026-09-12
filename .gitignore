@@ -1,0 +1,81 @@
+# --- Secrets / credentials (never commit) ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+credentials.json
+**/credentials.json
+**/secrets/
+.npmrc
+.pypirc
+*.token
+*.keystore
+/docs/** 
+
+# --- Local agent / IDE state (may hold private paths or session data) ---
+.cursor/**
+.cursor/**/*.local.*
+.superdesign/
+**/.superdesign/
+.claude/settings.local.json
+.continual-learning.json
+
+# --- Private research dumps / raw agent outputs (not for public repos) ---
+parallel-research/
+**/trun_*.json
+**/*-raw-research.json
+**/*-private-notes.md
+**/INBOX.private.md
+
+# --- Conda / Python local environments ---
+.conda/
+conda-env/
+**/conda-env/
+.env/
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Node / build caches ---
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/*.code-workspace
+
+# --- Memory banks / local dumps ---
+memory-bank/
+.memory/
+**/AGENTS.local.md
+*.local.md
+AGENTS.md
+# Intentional public drafts (DO NOT ignore):
+#   README.md  (canonical GitHub profile draft)
+#   docs/PROFILE_README.md  (pointer to ../README.md)
+#   docs/reports/*  (sanitized reports and org profile stubs)
+# If a report ever contains secrets: redact the file first, then keep it tracked only after scrubbing.

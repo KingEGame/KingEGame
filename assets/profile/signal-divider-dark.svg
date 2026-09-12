@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="28" viewBox="0 0 720 28" role="img" aria-label="Aurora signal divider">
+  <title>Aurora signal divider</title>
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#58A6FF" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#79C0FF" stop-opacity="1"/>
+      <stop offset="65%" stop-color="#3FB950" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#3FB950" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-200%" width="140%" height="500%">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="720" height="28" fill="none"/>
+  <line x1="40" y1="14" x2="680" y2="14" stroke="url(#line)" stroke-width="1.25" stroke-linecap="round" filter="url(#soft)">
+    <animate attributeName="stroke-opacity" values="0.45;1;0.45" dur="4.2s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="360" cy="14" r="2.4" fill="#79C0FF">
+    <animate attributeName="r" values="2;3.2;2" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;1;0.55" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="360" cy="14" r="7" fill="none" stroke="#58A6FF" stroke-opacity="0.35" stroke-width="1">
+    <animate attributeName="r" values="5;11;5" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- drifting mote -->
+  <circle r="1.6" fill="#3FB950" opacity="0.9">
+    <animateMotion dur="6.5s" repeatCount="indefinite" path="M80,14 C200,6 280,22 360,14 C440,6 520,22 640,14"/>
+    <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.12;0.88;1" dur="6.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
